@@ -24,16 +24,11 @@ A full-stack Machine Learning web application that predicts student marks based 
 
 ---
 
-## 📸 Screenshot
-
-![App Screenshot](screenshot.png)
-
----
 
 ## ⚙️ Run Locally
 
 ```bash
-git clone https://github.com/YOUR_USERNAME/AI-Student-Performance-Predictor.git
+git clone https://github.com/SatyavarapuHarika/AI-Student-Performance-Predictor.git
 cd AI-Student-Performance-Predictor
 
 pip install -r requirements.txt
