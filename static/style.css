@@ -1,0 +1,147 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+html, body {
+    height: 100%;
+}
+
+
+body {
+    font-family: 'Segoe UI', sans-serif;
+
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background: linear-gradient(-45deg, #00adb5, #393e46, #222831, #00adb5);
+    background-size: 400% 400%;
+    animation: gradientBG 10s ease infinite;
+
+    color: white;
+}
+
+
+body.light {
+    background: #f5f5f5;
+    color: black;
+}
+
+
+@keyframes gradientBG {
+    0% { background-position: 0% }
+    50% { background-position: 100% }
+    100% { background-position: 0% }
+}
+
+
+.toggle-container {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+}
+
+.toggle-container button {
+    padding: 8px 12px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    background: #00adb5;
+    color: white;
+}
+
+
+.card {
+    width: 380px;
+    padding: 30px;
+    border-radius: 20px;
+
+    background: rgba(255, 255, 255, 0.08);
+    backdrop-filter: blur(15px);
+
+    box-shadow: 0 8px 32px rgba(0,0,0,0.3);
+
+    text-align: center;
+
+    margin: auto;
+}
+
+
+body.light .card {
+    background: white;
+}
+
+
+h1 {
+    margin-bottom: 5px;
+}
+
+.subtitle {
+    font-size: 14px;
+    color: #ccc;
+    margin-bottom: 20px;
+}
+
+body.light .subtitle {
+    color: #555;
+}
+
+
+.input-group {
+    text-align: left;
+    margin-bottom: 15px;
+}
+
+input {
+    width: 100%;
+    padding: 10px;
+    border-radius: 10px;
+    border: none;
+    margin-top: 5px;
+    outline: none;
+}
+
+
+button {
+    width: 100%;
+    padding: 12px;
+    border-radius: 10px;
+    background: #00adb5;
+    border: none;
+    color: white;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+button:hover {
+    transform: scale(1.05);
+    background: #019ca3;
+}
+
+
+.result-box {
+    margin-top: 20px;
+    padding: 15px;
+    border-radius: 10px;
+    background: rgba(0,0,0,0.3);
+}
+
+body.light .result-box {
+    background: #eee;
+}
+
+
+#result {
+    transition: 0.3s;
+}
+
+
+canvas {
+    margin-top: 20px;
+    max-height: 200px;
+}

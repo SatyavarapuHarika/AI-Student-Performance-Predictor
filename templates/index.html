@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>AI Student Predictor</title>
+    <link rel="stylesheet" href="/static/style.css">
+
+    <!-- Chart.js CDN -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+
+<div class="toggle-container">
+    <button onclick="toggleTheme()">🌙</button>
+</div>
+
+<div class="card">
+    <h1>📊 AI Student Performance</h1>
+    <p class="subtitle">Smart prediction using Machine Learning</p>
+
+    <div class="input-group">
+        <label>📚 Hours Studied</label>
+        <input type="number" id="hours" placeholder="e.g. 6">
+    </div>
+
+    <div class="input-group">
+        <label>📅 Attendance (%)</label>
+        <input type="number" id="attendance" placeholder="e.g. 85">
+    </div>
+
+    <button onclick="predict()">🚀 Predict</button>
+
+    <div class="result-box">
+        <h2 id="result">Your result will appear here</h2>
+    </div>
+
+    <!-- Chart -->
+    <canvas id="chart"></canvas>
+</div>
+
+<script src="/static/script.js"></script>
+</body>
+</html>
